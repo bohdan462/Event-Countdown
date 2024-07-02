@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 struct Event: Comparable, Identifiable, Hashable {
-    var id: UUID
-    var title: String
-    var date: Date
-    var textColor: Color
+    let id: UUID
+    let title: String
+    let date: Date
+    let textColor: Color
 }

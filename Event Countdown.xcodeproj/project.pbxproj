@@ -19,9 +19,6 @@
 		CA5BF8722C2E9219001E4CA9 /* Event_CountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF8712C2E9219001E4CA9 /* Event_CountdownTests.swift */; };
 		CA5BF8782C2E9458001E4CA9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF85F2C2A7BBA001E4CA9 /* Event.swift */; };
 		CA5BF8792C2E945B001E4CA9 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF8672C2B3106001E4CA9 /* EventManager.swift */; };
-		CA5BF87A2C2E945D001E4CA9 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF8612C2A7CF1001E4CA9 /* EventView.swift */; };
-		CA5BF87B2C2E945F001E4CA9 /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF8632C2A8049001E4CA9 /* EventRow.swift */; };
-		CA5BF87C2C2E9461001E4CA9 /* EventFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF8652C2A838C001E4CA9 /* EventFormView.swift */; };
 		CA5BF87D2C2E9463001E4CA9 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF8692C2B34A1001E4CA9 /* Extension.swift */; };
 		CA5BF87E2C2E9467001E4CA9 /* Event_CountdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5BF8512C2A7B86001E4CA9 /* Event_CountdownApp.swift */; };
 		CA5BF87F2C2E946A001E4CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5BF8552C2A7B88001E4CA9 /* Assets.xcassets */; };
@@ -238,11 +235,8 @@
 				CA5BF8792C2E945B001E4CA9 /* EventManager.swift in Sources */,
 				CA5BF8782C2E9458001E4CA9 /* Event.swift in Sources */,
 				CA5BF87D2C2E9463001E4CA9 /* Extension.swift in Sources */,
-				CA5BF87B2C2E945F001E4CA9 /* EventRow.swift in Sources */,
-				CA5BF87C2C2E9461001E4CA9 /* EventFormView.swift in Sources */,
 				CA5BF8722C2E9219001E4CA9 /* Event_CountdownTests.swift in Sources */,
 				CA5BF87E2C2E9467001E4CA9 /* Event_CountdownApp.swift in Sources */,
-				CA5BF87A2C2E945D001E4CA9 /* EventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

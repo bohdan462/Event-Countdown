@@ -31,7 +31,7 @@ struct EventFormView: View {
                 
                 switch formtype {
                 case .add:
-                    TextField("Type here your Event", text: $title)
+                    TextField("", text: $title)
                 case .edit(let event):
                     TextField("\(event.title)", text: $title)
                 }

@@ -11,13 +11,8 @@ struct EventRow: View {
     
     let event: Event
     
-    @State private var timeRemaining: TimeInterval
+    @State private var timeRemaining: String = ""
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
-    init(event: Event) {
-        self.event = event
-        _timeRemaining = State(initialValue: event.date.timeIntervalSinceNow)
-    }
     
     var body: some View {
         
@@ -26,16 +21,22 @@ struct EventRow: View {
                 .font(.title3)
                 .fontWeight(.bold)
                 .foregroundStyle(event.textColor)
-            Text("\(Date(timeIntervalSinceNow: timeRemaining).formattedDate())")
+            Text("\(timeRemaining)")
                 .font(.subheadline)
                 .fontWeight(.medium)
                 .onReceive(timer) { time in
-                    if timeRemaining > 0 {
-                        timeRemaining -= 1
-                    }
+                    timeRemaining = dateDescription(date: event.date, relativeTo: Date.now)
                 }
         }
         
+    }
+    
+    private func dateDescription(date: Date, relativeTo anotherDate: Date) -> String {
+        let formatter = RelativeDateTimeFormatter()
+        formatter.dateTimeStyle = .named
+        formatter.unitsStyle = .full
+        
+        return formatter.localizedString(for: date, relativeTo: anotherDate)
     }
 }
 
